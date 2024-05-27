@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevi</title>
+    <style>
+        #yesButton {
+            color: black;
+            width: 100px;
+            height: 50px;
+            padding: 5px;
+            background-color: red;
+            position: absolute;
+        }
+
+        #noButton {
+            color: black;
+            width: 100px;
+            height: 50px;
+            padding: 5px;
+            background-color: red;
+            margin: 60px;
+            margin-left: 1px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Wanna watch a horror movie, honeybunchsugarplumyumpyyumpyyumpkin?<br> ^3^ (try saying no)</h1>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+    <script>
+        const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+
+        const maxheight = window.innerHeight - 50;
+        const maxwidth = window.innerWidth - 100;
+
+        yesButton.addEventListener('click', () => alert("YEY!! we can watch at about 9:30 PM, bub. If the time doesn't suit your schedule, we can set another one. Let me make bawi to you this time, sweetheart, for what I did the last we watched a movie :(."));
+        noButton.addEventListener('mouseover', () => {
+            noButton.style.left = Math.floor(Math.random() * maxwidth) + 'px';
+            noButton.style.top = Math.floor(Math.random() * maxheight) + 'px';
+        });
+    </script>
+</body>
+</html>
